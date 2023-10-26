@@ -1,0 +1,25 @@
+Package: MAGEIT
+Title: Detection of interactions between genetic marker sets and an environmental factor.
+Version: 0.0.0.9000
+Authors@R: 
+  c(person(given = "Linchuan",
+           family = "Shen",
+           role = c("aut", "cre"),
+           email = "xug3@unlv.nevada.edu"),
+    person(given = "Amei",
+           family = "Amei",
+           role = "aut"),
+    person(given = "Zuoheng",
+           family = "Wang",
+           role = "aut"))
+Description: Detection of interactions between genetic marker sets and an environmental factor.
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+LinkingTo: Rcpp, RcppArmadillo
+Imports: 
+    CompQuadForm,
+    Rcpp,
+    RcppArmadillo,
+    truncnorm
