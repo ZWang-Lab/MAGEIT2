@@ -1,0 +1,12 @@
+CXX=g++-13
+CC=gcc-13
+CXX_STD = CXX11
+PKG_CXXFLAGS = -march=arm64
+
+SHLIB_OPENMP_CXXFLAGS = -fopenmp -I/opt/homebrew/opt/libomp/include
+SHLIB_OPENMP_CXXLIBS = -L/opt/homebrew/opt/libomp/lib -lomp
+PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS)
+PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(SHLIB_OPENMP_CXXLIBS)
+
+
+
