@@ -2,7 +2,7 @@
 #' @importFrom Rcpp sourceCpp
 
 
-sourceCpp('MAGEB.cpp')
+#sourceCpp('MAGEB.cpp')
 
 
 MAGE_RAN.body = function(y.star, G.star, S.star, M, n.fix)
