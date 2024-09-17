@@ -2,138 +2,138 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 MatMult <- function(A, B) {
-    .Call('_MAGEIT_MatMult', PACKAGE = 'MAGEIT', A, B)
+    .Call(`_MAGEIT_MatMult`, A, B)
 }
 
 acc <- function(A) {
-    .Call('_MAGEIT_acc', PACKAGE = 'MAGEIT', A)
+    .Call(`_MAGEIT_acc`, A)
 }
 
 eigen_posi <- function(GM, H) {
-    .Call('_MAGEIT_eigen_posi', PACKAGE = 'MAGEIT', GM, H)
+    .Call(`_MAGEIT_eigen_posi`, GM, H)
 }
 
 MultiTrace <- function(Gc, Sc) {
-    .Call('_MAGEIT_MultiTrace', PACKAGE = 'MAGEIT', Gc, Sc)
+    .Call(`_MAGEIT_MultiTrace`, Gc, Sc)
 }
 
 MatInv <- function(A) {
-    .Call('_MAGEIT_MatInv', PACKAGE = 'MAGEIT', A)
+    .Call(`_MAGEIT_MatInv`, A)
 }
 
 comeigen_sys <- function(M) {
-    .Call('_MAGEIT_comeigen_sys', PACKAGE = 'MAGEIT', M)
+    .Call(`_MAGEIT_comeigen_sys`, M)
 }
 
 Compute5PCs <- function(X, top = 5L) {
-    .Call('_MAGEIT_Compute5PCs', PACKAGE = 'MAGEIT', X, top)
+    .Call(`_MAGEIT_Compute5PCs`, X, top)
 }
 
 ComputePCs <- function(X, top = 10L) {
-    .Call('_MAGEIT_ComputePCs', PACKAGE = 'MAGEIT', X, top)
+    .Call(`_MAGEIT_ComputePCs`, X, top)
 }
 
 comeigen_fixed_Gfix <- function(S, q, Sc, M) {
-    .Call('_MAGEIT_comeigen_fixed_Gfix', PACKAGE = 'MAGEIT', S, q, Sc, M)
+    .Call(`_MAGEIT_comeigen_fixed_Gfix`, S, q, Sc, M)
 }
 
 comeigen_burden <- function(S, q, Sc, M) {
-    .Call('_MAGEIT_comeigen_burden', PACKAGE = 'MAGEIT', S, q, Sc, M)
+    .Call(`_MAGEIT_comeigen_burden`, S, q, Sc, M)
 }
 
 comeigen <- function(HM) {
-    .Call('_MAGEIT_comeigen', PACKAGE = 'MAGEIT', HM)
+    .Call(`_MAGEIT_comeigen`, HM)
 }
 
 comeigen_fixed <- function(S, q, Gc, Sc, M) {
-    .Call('_MAGEIT_comeigen_fixed', PACKAGE = 'MAGEIT', S, q, Gc, Sc, M)
+    .Call(`_MAGEIT_comeigen_fixed`, S, q, Gc, Sc, M)
 }
 
 GetLinearKernel <- function(G) {
-    .Call('_MAGEIT_GetLinearKernel', PACKAGE = 'MAGEIT', G)
+    .Call(`_MAGEIT_GetLinearKernel`, G)
 }
 
 GetLinearKernel_weight <- function(G, W) {
-    .Call('_MAGEIT_GetLinearKernel_weight', PACKAGE = 'MAGEIT', G, W)
+    .Call(`_MAGEIT_GetLinearKernel_weight`, G, W)
 }
 
 CovComb <- function(X1, X2) {
-    .Call('_MAGEIT_CovComb', PACKAGE = 'MAGEIT', X1, X2)
+    .Call(`_MAGEIT_CovComb`, X1, X2)
 }
 
 mat_inv_3 <- function(S) {
-    .Call('_MAGEIT_mat_inv_3', PACKAGE = 'MAGEIT', S)
+    .Call(`_MAGEIT_mat_inv_3`, S)
 }
 
 GetS_est_Gfix <- function(Sc, M) {
-    .Call('_MAGEIT_GetS_est_Gfix', PACKAGE = 'MAGEIT', Sc, M)
+    .Call(`_MAGEIT_GetS_est_Gfix`, Sc, M)
 }
 
 GetS_est <- function(Gc, Sc, M, m) {
-    .Call('_MAGEIT_GetS_est', PACKAGE = 'MAGEIT', Gc, Sc, M, m)
+    .Call(`_MAGEIT_GetS_est`, Gc, Sc, M, m)
 }
 
 GetS_est4 <- function(Gc, Sc, M, Uc) {
-    .Call('_MAGEIT_GetS_est4', PACKAGE = 'MAGEIT', Gc, Sc, M, Uc)
+    .Call(`_MAGEIT_GetS_est4`, Gc, Sc, M, Uc)
 }
 
 GetQ_est_Gfix <- function(Sc, M, yc) {
-    .Call('_MAGEIT_GetQ_est_Gfix', PACKAGE = 'MAGEIT', Sc, M, yc)
+    .Call(`_MAGEIT_GetQ_est_Gfix`, Sc, M, yc)
 }
 
 GetQ_est <- function(Gc, Sc, M, yc) {
-    .Call('_MAGEIT_GetQ_est', PACKAGE = 'MAGEIT', Gc, Sc, M, yc)
+    .Call(`_MAGEIT_GetQ_est`, Gc, Sc, M, yc)
 }
 
 GetQ_est4 <- function(Gc, Sc, Uc, M, yc) {
-    .Call('_MAGEIT_GetQ_est4', PACKAGE = 'MAGEIT', Gc, Sc, Uc, M, yc)
+    .Call(`_MAGEIT_GetQ_est4`, Gc, Sc, Uc, M, yc)
 }
 
 ComputeProj_Gfix <- function(X1, X2, E, Gc) {
-    .Call('_MAGEIT_ComputeProj_Gfix', PACKAGE = 'MAGEIT', X1, X2, E, Gc)
+    .Call(`_MAGEIT_ComputeProj_Gfix`, X1, X2, E, Gc)
 }
 
 ComputeProj_Gfixx <- function(X, E, Gc) {
-    .Call('_MAGEIT_ComputeProj_Gfixx', PACKAGE = 'MAGEIT', X, E, Gc)
+    .Call(`_MAGEIT_ComputeProj_Gfixx`, X, E, Gc)
 }
 
 ComputeProjxx <- function(X, E) {
-    .Call('_MAGEIT_ComputeProjxx', PACKAGE = 'MAGEIT', X, E)
+    .Call(`_MAGEIT_ComputeProjxx`, X, E)
 }
 
 ComputeProj <- function(X1, X2, E) {
-    .Call('_MAGEIT_ComputeProj', PACKAGE = 'MAGEIT', X1, X2, E)
+    .Call(`_MAGEIT_ComputeProj`, X1, X2, E)
 }
 
 ComputeProj_randomX <- function(E) {
-    .Call('_MAGEIT_ComputeProj_randomX', PACKAGE = 'MAGEIT', E)
+    .Call(`_MAGEIT_ComputeProj_randomX`, E)
 }
 
 ComputeDelta <- function(S, q) {
-    .Call('_MAGEIT_ComputeDelta', PACKAGE = 'MAGEIT', S, q)
+    .Call(`_MAGEIT_ComputeDelta`, S, q)
 }
 
 Standard <- function(S) {
-    .Call('_MAGEIT_Standard', PACKAGE = 'MAGEIT', S)
+    .Call(`_MAGEIT_Standard`, S)
 }
 
 Standard_vec <- function(S) {
-    .Call('_MAGEIT_Standard_vec', PACKAGE = 'MAGEIT', S)
+    .Call(`_MAGEIT_Standard_vec`, S)
 }
 
 Center <- function(S) {
-    .Call('_MAGEIT_Center', PACKAGE = 'MAGEIT', S)
+    .Call(`_MAGEIT_Center`, S)
 }
 
 Sigma_mapit <- function(S, yc, delta, Gc, Sc, M) {
-    .Call('_MAGEIT_Sigma_mapit', PACKAGE = 'MAGEIT', S, yc, delta, Gc, Sc, M)
+    .Call(`_MAGEIT_Sigma_mapit`, S, yc, delta, Gc, Sc, M)
 }
 
 Sigma_mapit_rancov <- function(S, yc, delta, Gc, Sc, Uc, M) {
-    .Call('_MAGEIT_Sigma_mapit_rancov', PACKAGE = 'MAGEIT', S, yc, delta, Gc, Sc, Uc, M)
+    .Call(`_MAGEIT_Sigma_mapit_rancov`, S, yc, delta, Gc, Sc, Uc, M)
 }
 
 eig_null <- function(S, q, Gc, Sc, M) {
-    .Call('_MAGEIT_eig_null', PACKAGE = 'MAGEIT', S, q, Gc, Sc, M)
+    .Call(`_MAGEIT_eig_null`, S, q, Gc, Sc, M)
 }
 

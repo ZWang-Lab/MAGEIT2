@@ -1,8 +1,7 @@
-
+#' @useDynLib MAGEIT, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
-
-
-#sourceCpp('MAGEB.cpp')
+#' @importFrom CompQuadForm davies
+#' @importFrom truncnorm etruncnorm
 
 
 MAGE_RAN.body = function(y.star, G.star, S.star, M, n.fix)
@@ -296,11 +295,11 @@ MAGE_FIX_REAL.C = function(y, X, e1, G)
 
   if (length(weight.num)==1){
     weight = weight.num
-    M = ComputeProj_Gfixx(X, e1, G)
+    M = .Call('_MAGEIT_ComputeProj_Gfixx', X, e1, G)
     G.weight = G*weight
   }else{
     weight = diag(weight.num)
-    M = ComputeProj_Gfixx(X, e1, G)
+    M = .Call('_MAGEIT_ComputeProj_Gfixx', X, e1, G)
     G.weight = MatMult(G,weight)
   }
   S = MatMult(diag(e1),G.weight)
